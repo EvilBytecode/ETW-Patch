@@ -7,3 +7,7 @@
 - Uses Windows API functions ```(GetModuleHandleA, GetProcAddress, VirtualProtect)``` to locate and modify the EtwEventWrite function in memory.
 
 - Defines a byte sequence ```(0x33, 0xC0, 0xC3)``` that represents the assembly instructions ```(XOR EAX, EAX; RET)``` used to replace the beginning of the EtwEventWrite function. This effectively nullifies the function's effect, making it return immediately without performing its intended actions.
+
+
+## License
+This project is licensed under the MIT License. See the LICENSE file for details.
